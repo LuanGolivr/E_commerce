@@ -6,6 +6,6 @@ const router = Router();
 
 
 router.get('/', itemsController.home);
-router.get('/:filter', itemsController.products);
+router.get('/products/:filter', itemsController.products);
 
 export default router;

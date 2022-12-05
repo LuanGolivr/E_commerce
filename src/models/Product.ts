@@ -19,6 +19,7 @@ type productType = {
     category: [string],
     color: [string]
     gender: gender,
+    addedDate: Date,
     view: number
 };
 
@@ -39,6 +40,7 @@ const schema = new Schema<productType>({
     category: {type: [String]},
     color: {type: [String]},
     gender: {type: String},
+    addedDate: {type: Date},
     view: {type: Number}
 });
 

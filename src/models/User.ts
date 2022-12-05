@@ -10,7 +10,9 @@ type userType = {
     passwordHash: string,
     birthDate: Date,
     gender: Gender,
-    token: string
+    token: string,
+    wishList: [string],
+    bag: [string]
 }
 
 const schema = new Schema<userType>({
@@ -20,7 +22,9 @@ const schema = new Schema<userType>({
     passwordHash: {type:String, required:true},
     birthDate: {type: Date},
     gender: {type: String},
-    token: {type: String}
+    token: {type: String},
+    wishList: {type: [String]},
+    bag: {type: [String]}
 });
 
 const modelName: string = "users";
